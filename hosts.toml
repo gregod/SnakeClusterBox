@@ -1,0 +1,47 @@
+[network]
+gateway = "10.152.41.254"
+wireguard_net_prefix = "10.0.2."
+dns = "9.9.9.9"
+
+[snakemake]
+# these are purely meant for helper functions used in 
+# the snakefile itself. Use the conda snakemake integration 
+# for all other situations
+python_deps = ["pandas"]
+
+[access]
+# name of the user used for ssh login and computation
+main_user = "gu53rab2"
+# local login only 
+root_pw = "insecure_default"
+
+# one ssh public key per array item
+sshkeys = [
+    "ecdsa-sha2-nistp521 AA... user@blub"
+]
+
+[[hosts]]
+# there must be a single host called master
+name = "master"
+# master can optionally be a worker too
+worker = true
+static_ip = "10.152.41.80"
+
+
+[[hosts]]
+# all other hosts can be named arbitrarily
+name = "worker1"
+worker = true
+static_ip = "10.152.41.81"
+
+
+[[hosts]]
+name = "worker2"
+worker = true
+static_ip = "10.152.41.82"
+
+
+[[hosts]]
+name = "worker3"
+worker = true
+static_ip ="10.152.41.83"
