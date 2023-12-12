@@ -1,4 +1,6 @@
-# heavily based on https://github.com/fennerm/snakemake_slurm_scheduler/
+# Python Script from https://github.com/fennerm/snakemake_slurm_scheduler/
+# Used under MIT License - Copyright (c) 2023 Fenner Macrae
+# Adapted for nix
 { writeScript, python }:
 
 writeScript "submit.py" ''

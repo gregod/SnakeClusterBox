@@ -1,5 +1,11 @@
-# Adapted from https://github.com/NixOS/nixpkgs/issues/26245#issuecomment-304974959
-# by jluttine / Jaakko Luttinen 
+# Adapted from 
+#     https://github.com/NixOS/nixpkgs/issues/26245#issuecomment-304974959  by jluttine / Jaakko Luttinen 
+#
+#     https://github.com/bhipple/nixpkgs/blob/c5ca4af66a8121d36e744ca0b8de3007188c2e35/pkgs/tools/package-management/conda/default.nix
+#     Used under MIT License, Copyright (c) 2003-2023 Eelco Dolstra and the Nixpkgs/NixOS contributors
+#
+# Modified to use chroot
+
 { pkgs ? import <nixpkgs> {}, env-path ? "/tmp/conda-env" }:
 
 let
