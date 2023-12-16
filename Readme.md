@@ -7,7 +7,6 @@ We introduce a [Snakemake](https://www.snakemake.org) and [Conda](https://anacon
 ## Build Prerequisites
 
 * [Nix package manager](https://nixos.org):  Required for building the Linux image.
-* [WireGuard](https://www.wireguard.com) CLI: Necessary for generating WireGuard keys.
 
 
 ## Preparing the USB Stick
@@ -17,7 +16,7 @@ This repository provides the tools to build a custom ISO that can be burned onto
 * Clone this repository and adapt the [Configuration File](./hosts.toml)  to suit   your requirements.
   All fields except for `root_pw` are mandatory. 
 
-* Execute `sh ./buildIso.sh` to initiate the build process. This involves downloading and constructing a Linux image from scratch, which may take some time. Once completed, the ISO image can be located in the `result` folder.
+* Execute `./buildIso.sh` to initiate the build process. This involves downloading and constructing a Linux image from scratch, which may take some time. Once completed, the ISO image can be located in the `result` folder.
 
 * Burn the ISO onto a USB stick or CD.
 
