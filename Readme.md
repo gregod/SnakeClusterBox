@@ -2,7 +2,7 @@
 
 ![Illustration: Three snakes sitting on cardbord boxes](./snake_on_box.jpg)
 
-We introduce a [Snakemake](https://www.snakemake.org) and [Conda](https://anaconda.org/anaconda/conda) enabled, multi-node [SLURM](https://slurm.schedmd.com/) computation cluster that can be launched from a single USB stick and operates entirely in RAM. This setup enables us to temporarily borrow any computational resources from a lab. This software enables any researcher to establish a robust computation cluster using a straightforward configuration file, eliminating the need for specialized systems engineering or administration knowledge. Moreover, it diminishes reliance on centrally administered resources. 
+We introduce a [Snakemake](https://www.snakemake.org) and [Conda](https://anaconda.org/anaconda/conda) enabled, multi-node [Slurm](https://slurm.schedmd.com/) computation cluster that can be launched from a single USB stick and operates entirely in RAM. This setup enables us to temporarily borrow any computational resources from a lab. This software enables any researcher to establish a robust computation cluster using a straightforward configuration file, eliminating the need for specialized systems engineering or administration knowledge. Moreover, it diminishes reliance on centrally administered resources. 
 
 ## Build Prerequisites
 
